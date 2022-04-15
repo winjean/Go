@@ -1,11 +1,11 @@
 package main
 
 import (
+	"go_server/controller/hello_controller"
+	"go_server/proto/hello"
+	"google.golang.org/grpc"
 	"log"
 	"net"
-	"hello/go_server/proto/hello"
-	"hello/go_server/controller/hello_controller"
-	"google.golang.org/grpc"
 )
 
 const (

@@ -3,7 +3,8 @@
 
 ## 前言
 
-在 `Golang` 中 `map` 不是并发安全的，自 1.9 才引入了 `sync.Map` ，`sync.Map` 的引入确实解决了 `map` 的并发安全问题，不过 `sync.Map` 却没有实现 `len()` 函数，如果想要计算 `sync.Map` 的长度，稍微有点麻烦，需要使用 `Range` 函数。
+在 `Golang` 中 `map` 不是并发安全的，自 1.9 才引入了 `sync.Map` ，`sync.Map` 的引入确实解决了 `map` 的并发安全问题，
+不过 `sync.Map` 却没有实现 `len()` 函数，如果想要计算 `sync.Map` 的长度，稍微有点麻烦，需要使用 `Range` 函数。
 
 ## map 并发操作出现问题
 

@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	str := "abcdef"
-	fmt.Printf("MD5(%s): %s\n", str, MD5("abcdef"))
+	//str := "abcdef"
+	//fmt.Printf("MD5(%s): %s\n", str, MD5("abcdef"))
 	fmt.Printf("current time str : %s\n", getTimeStr())
 	fmt.Printf("current time unix : %d\n", getTimeInt())
 }
@@ -22,5 +22,3 @@ func getTimeStr() string {
 func getTimeInt() int64 {
 	return time.Now().Unix()
 }
-
-

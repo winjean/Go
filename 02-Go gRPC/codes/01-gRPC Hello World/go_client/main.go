@@ -1,11 +1,11 @@
 package main
 
 import (
-	"hello/go_client/proto/hello"
-	"io"
-	"log"
+	"go_client/proto/hello"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
+	"io"
+	"log"
 )
 
 const (
@@ -33,7 +33,7 @@ func main() {
 	log.Println(res.Message)
 
 	// 调用 LotsOfReplies 方法
-	stream, err := c.LotsOfReplies(context.Background(),&hello.HelloRequest{Name: "Hello World"})
+	stream, err := c.LotsOfReplies(context.Background(), &hello.HelloRequest{Name: "Hello World"})
 	if err != nil {
 		log.Fatalln(err)
 	}

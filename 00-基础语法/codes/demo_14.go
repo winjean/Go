@@ -9,6 +9,7 @@ func main() {
 	var p1 map[int]string
 	p1 = make(map[int]string)
 	p1[1] = "Tom"
+	p1[2] = "Tom2"
 	fmt.Println("p1 :", p1)
 
 	var p2 map[int]string = map[int]string{}
@@ -28,7 +29,7 @@ func main() {
 	fmt.Println("p5 :", p5)
 
 	p6 := map[int]string{
-		1 : "Tom",
+		1: "Tom",
 	}
 	fmt.Println("p6 :", p6)
 }
