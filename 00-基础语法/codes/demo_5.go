@@ -6,10 +6,10 @@ import (
 
 func main() {
 	var arr = [5]int{1, 2, 3, 4, 5}
-	modifyArr(arr)
+	modifyArr1(arr)
 	fmt.Println(arr)
 }
 
-func modifyArr(a [5]int) {
+func modifyArr1(a [5]int) {
 	a[1] = 20
 }

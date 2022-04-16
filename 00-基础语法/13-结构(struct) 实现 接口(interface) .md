@@ -1,6 +1,7 @@
 在 Go 语言中，一个 struct 实现了某个接口里的所有方法，就叫做这个 struct 实现了该接口。
 
-下面写一个 Demo 实现一下，先写一个 Study interface{}，里面需要实现 4 个方法 Listen、Speak、Read、Write，然后再写一个 study struct{}，去全部实现里面的方法，然后分享一下代码心得。
+下面写一个 Demo 实现一下，先写一个 Study interface{}，里面需要实现 4 个方法 Listen、Speak、Read、Write，
+然后再写一个 study struct{}，去全部实现里面的方法，然后分享一下代码心得。
 
 ## 代码示例
 
